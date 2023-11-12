@@ -1,0 +1,540 @@
+/* Variáveis de cores */
+:root {
+    --primary-color: rgb(119, 13, 30);
+    --light-color: #FFF;
+    --dark-color: #181920;
+    --text-color: #8B8E94;
+    --black: #000;
+    --secondary-bg: #E5EAFF;
+    --footer-bg: #1D1D1D;
+}
+
+/* Reset styles */
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+em,
+small,
+strong,
+sub,
+sup,
+mark,
+abbr,
+address,
+bdi,
+dfn,
+i,
+time,
+var,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary,
+figure,
+figcaption,
+img,
+svg,
+audio,
+canvas,
+iframe,
+video,
+label,
+textarea,
+datalist,
+fieldset,
+legend,
+meter,
+optgroup,
+option,
+progress,
+button,
+details,
+summary,
+input,
+select,
+textarea,
+menuitem {
+
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+    font-size: 100%;
+
+    font: inherit;
+
+    vertical-align: baseline;
+
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Main banner styles */
+#main-banner {
+    background: linear-gradient(to bottom, #000, #610101);
+    height: 100vh;
+    background-image: url('../img/capa.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* Mobile styles for main banner */
+@media only screen and (max-width: 768px) {
+    #main-banner {
+        height: 100vh;
+    }
+}
+
+/* Navigation styles */
+nav {
+    display: none;
+}
+
+/* Navigation container styles */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    background-color: black;
+    z-index: 10;
+}
+
+/* Mobile styles for navigation container */
+@media only screen and (max-width: 768px) {
+    .nav-container {
+        padding: 1rem;
+    }
+}
+
+/* Brand styles */
+.nav-container .brand {
+    color: white;
+    font-size: 2rem;
+}
+
+/* Main hover effect styles */
+.nav-container:hover {
+    /* Define your main hover styles here */
+}
+
+/* Navbar styles */
+.nav-container-navbar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* List item styles */
+.nav-container li {
+    margin: 5px 10px;
+}
+
+/* Anchor styles */
+.nav-container li a {
+    color: white;
+}
+
+/* Mobile styles for icon bars */
+.nav-container .fas.fa-bars {
+    font-size: 2rem;
+    color: #FFF;
+    display: none;
+}
+
+/* Mobile styles for navigation container */
+@media only screen and (max-width: 768px) {
+    .nav-container .fas.fa-bars {
+        display: block;
+    }
+}
+
+/* Title container styles */
+.title-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Mobile styles for title container */
+@media only screen and (max-width: 768px) {
+    .title-container {
+        text-align: center;
+        padding: 2rem;
+    }
+}
+
+/* Heading 2 styles */
+.title-container h2 {
+    font-size: 3rem;
+    text-shadow:
+        -1px -1px 0px #000,
+        -1px 1px 0px #000,
+        1px -1px 0px #000,
+        1px 0px 0px #610101;
+    /* Extend title-text-shadow styles here */
+}
+
+/* Heading 1 styles */
+.title-container h1 {
+    font-size: 4rem;
+    margin-top: 1rem;
+    text-shadow:
+    -1px -1px 0px #000,
+    -1px 1px 0px #000,
+    1px -1px 0px #000,
+    1px 0px 0px #610101;
+    /* Extend title-text-shadow styles here */
+}
+
+.title-container a {
+    color: white;
+    background-color: #070000c4;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    transition: .5s;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.title-container a:hover {
+    background-color: #610101d5;
+} 
+
+/* Services container styles */
+.services-container {
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Heading 2 styles for services */
+.services-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+    /* Extend section-title styles here */
+}
+
+/* Services card container styles */
+.services-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+/* Mobile styles for services card container */
+@media only screen and (max-width: 768px) {
+    .services-card-container {
+        padding: 2rem 0;
+    }
+}
+
+/* Services card styles */
+.services-card-container .services-card {
+    width: 30%;
+    margin: 1%;
+    padding: 2rem;
+    border: 1px solid #CCC;
+    transition: .3s;
+}
+
+/* Mobile styles for services card */
+@media only screen and (max-width: 768px) {
+    .services-card-container .services-card {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Icon styles */
+.services-card-container i {
+    color: var(--primary-color);
+    font-size: 4rem;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Heading 3 styles */
+.services-card-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Paragraph styles */
+.services-card-container p {
+    color: var(--text-color);
+}
+
+/* Hover effect styles for services card */
+.services-card-container .services-card:hover {
+    border: transparent;
+    box-shadow: 0 1px 10px #CCC;
+}
+
+/* Jobs container styles */
+.jobs-container {
+    background-color: #333;
+    padding: 3rem;
+}
+
+/* Mobile styles for jobs container */
+@media only screen and (max-width: 768px) {
+    .jobs-container {
+        padding: 2rem;
+    }
+}
+
+/* Heading 2 styles for jobs */
+.jobs-container h2 {
+    /* Extend section-title styles here */
+}
+
+/* Jobs list styles */
+.jobs-container .jobs-list {
+    display: flex;
+    padding: 2rem 0;
+}
+
+/* Mobile styles for jobs list */
+@media only screen and (max-width: 768px) {
+    .jobs-container .jobs-list {
+        flex-direction: column;
+    }
+}
+
+/* First job card styles */
+.jobs-container .first-job {
+    width: 60%;
+    height: 790px;
+    margin: 0 0.5%;
+    background-image: url('../img/casamento.jpg');
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+    /* Extend center-bg and card-hover styles here */
+}
+
+/* Mobile styles for first job card */
+@media only screen and (max-width: 768px) {
+    .jobs-container .first-job {
+        /* Extend card-mobile styles here */
+    }
+}
+
+/* Other jobs container styles */
+.jobs-container .other-jobs-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Mobile styles for other jobs container */
+@media only screen and (max-width: 768px) {
+    .jobs-container .other-jobs-container {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+/* Job card styles */
+.jobs-container .job-card {
+    width: 40%;
+    height: 365px;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    /* Extend center-bg and card-hover styles here */
+}
+
+/* Mobile styles for job card */
+@media only screen and (max-width: 768px) {
+    .jobs-container .job-card {
+        /* Extend card-mobile styles here */
+    }
+}
+
+/* Job 2 styles */
+.jobs-container #job2 {
+    background-image: url('../img/2casamento.jpg');
+}
+
+/* Job 3 styles */
+.jobs-container #job3 {
+    background-image: url('../img/3casamento.jpg');
+}
+
+/* Job 4 styles */
+.jobs-container #job4 {
+    background-image: url('../img/4casamento.jpg');
+}
+
+/* Job 5 styles */
+.jobs-container #job5 {
+    background-image: url('../img/capa.jpg');
+}
+
+/* Job card cover styles */
+.jobs-container .job-card-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 1rem;
+    background-color: rgba(0, 0, 0, .6);
+    border: 3px solid var(--primary-color);
+}
+
+/* Job card title styles */
+.jobs-container .job-card-title {
+    text-align: center;
+    color: #FFF;
+    font-size: 2.2rem;
+    transition: .5s;
+    font-weight: bold;
+}
+
+/* Job card description styles */
+.jobs-container .job-card-description {
+    text-align: center;
+    color: #FFF;
+    padding: 1rem;
+    font-size: .9rem;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: var(--text-color);
+    padding: 5rem 2rem;
+}
+
+/* Footer container styles */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Mobile styles for footer container */
+@media only screen and (max-width: 768px) {
+    .footer-container {
+        max-width: 100%;
+        flex-direction: column;
+    }
+}
+
+/* Footer title styles */
+.footer-container .footer-title {
+    color: #FFF;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Footer description and links container styles */
+.footer-container .footer-desc-container,
+.footer-container .footer-links-container {
+    width: 50%;
+}
+
+/* Mobile styles for footer description and links container */
+@media only screen and (max-width: 768px) {
+
+    .footer-container .footer-desc-container,
+    .footer-container .footer-links-container {
+        width: 100%;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+}
+
+/* Footer description container styles */
+.footer-container .footer-desc-container p {
+    width: 80%;
+    line-height: 1.3;
+}
+
+/* Mobile styles for footer description container */
+@media only screen and (max-width: 768px) {
+    .footer-container .footer-desc-container p {
+        width: 100%;
+    }
+}
+
+/* Footer links container styles */
+.footer-container .footer-links-container ul {
+    padding: 0 1rem;
+}
+
+/* Mobile styles for footer links container */
+@media only screen and (max-width: 768px) {
+    .footer-container .footer-links-container ul {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Footer list item styles */
+.footer-container .footer-links-container li {
+    margin-bottom: .5rem;
+}
+
+/* Footer link styles */
+.footer-container .footer-links-container a {
+    color: var(--text-color);
+    transition: .5s;
+}
+
+/* Hover effect styles for footer links */
+.footer-container .footer-links-container a:hover {
+    color: #FFF;
+}
+
+/* Footer copyright container styles */
+.footer-container .footer-copy-right-container {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+/* Mobile styles for footer copyright container */
+@media only screen and (max-width: 768px) {
+    .footer-container .footer-copy-right-container {
+        text-align: center;
+    }
+}
+
+/* Paragraph styles for footer copyright container */
+.footer-container .footer-copy-right-container p {
+    margin-bottom: 1rem;
+}

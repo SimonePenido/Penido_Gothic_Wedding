@@ -106,7 +106,9 @@ menuitem {
 
 /* Navigation styles */
 nav {
-    display: none;
+    display:flex;
+    justify-content: space-between;
+    color: #FFF;
 }
 
 /* Navigation container styles */
@@ -145,6 +147,8 @@ nav {
     display: flex;
     align-items: center;
     height: 100%;
+    list-style-type: none;
+    text-decoration: none;
 }
 
 /* List item styles */
@@ -192,6 +196,7 @@ nav {
 /* Heading 2 styles */
 .title-container h2 {
     font-size: 3rem;
+    color: #FFF;
     text-shadow:
         -1px -1px 0px #000,
         -1px 1px 0px #000,
@@ -204,27 +209,28 @@ nav {
 .title-container h1 {
     font-size: 4rem;
     margin-top: 1rem;
+    color: #FFF;
     text-shadow:
     -1px -1px 0px #000,
     -1px 1px 0px #000,
     1px -1px 0px #000,
     1px 0px 0px #610101;
-    /* Extend title-text-shadow styles here */
-}
+    }
 
-.title-container a {
+a {
     color: white;
     background-color: #070000c4;
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
     border-radius: 5px;
     margin-top: 2rem;
     transition: .5s;
     border-radius: 10px;
-    text-decoration: none;
     text-transform: uppercase;
+    text-decoration: none;
+    list-style-type: none;
 }
 
-.title-container a:hover {
+a:hover {
     background-color: #610101d5;
 } 
 
@@ -232,7 +238,7 @@ nav {
 .services-container {
     text-align: center;
     padding: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 /* Heading 2 styles for services */
@@ -248,7 +254,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 /* Mobile styles for services card container */
@@ -337,17 +343,20 @@ nav {
     width: 60%;
     height: 790px;
     margin: 0 0.5%;
-    background-image: url('../img/casamento.jpg');
+    background-image: url('../img/1traje.jpg');
     position: relative;
     cursor: pointer;
     transition: .5s;
+    background-repeat: no-repeat;
+    background-size: cover;
     /* Extend center-bg and card-hover styles here */
 }
 
 /* Mobile styles for first job card */
 @media only screen and (max-width: 768px) {
     .jobs-container .first-job {
-        /* Extend card-mobile styles here */
+        width: 100%;
+        flex-direction: column;/* Extend card-mobile styles here */
     }
 }
 
@@ -369,39 +378,84 @@ nav {
 /* Job card styles */
 .jobs-container .job-card {
     width: 40%;
-    height: 365px;
+    height: 600px;
     position: relative;
     cursor: pointer;
     margin-bottom: 10px;
     margin-right: 10px;
-    /* Extend center-bg and card-hover styles here */
+    * Extend center-bg and card-hover styles here */
 }
 
 /* Mobile styles for job card */
 @media only screen and (max-width: 768px) {
     .jobs-container .job-card {
-        /* Extend card-mobile styles here */
+        width: 100%;
+        flex-direction: column;/* Extend card-mobile styles here */
     }
 }
 
 /* Job 2 styles */
 .jobs-container #job2 {
-    background-image: url('../img/2casamento.jpg');
+    background-image: url('../img/2traje.jpg');
+    background-repeat: no-repeat;
 }
 
 /* Job 3 styles */
 .jobs-container #job3 {
-    background-image: url('../img/3casamento.jpg');
+    background-image: url('../img/3traje.jpg');
+    background-repeat: no-repeat;
 }
 
 /* Job 4 styles */
 .jobs-container #job4 {
-    background-image: url('../img/4casamento.jpg');
+    background-image: url('../img/4traje.jpg');
+    background-repeat: no-repeat;
 }
 
 /* Job 5 styles */
 .jobs-container #job5 {
-    background-image: url('../img/capa.jpg');
+    background-image: url('../img/5traje.jpg');
+    background-repeat: no-repeat;
+}
+
+.jobs-container #job6 {
+    background-image: url('../img/6traje.jpg');
+    background-repeat: no-repeat;
+}
+
+.jobs-container #job7 {
+    background-image: url('../img/7traje.jpg');
+    background-repeat: no-repeat;
+}
+
+.jobs-container #job8 {
+    background-image: url('../img/8traje.jpg');
+    background-repeat: no-repeat;
+}
+
+.jobs-container #job9 {
+    background-image: url('../img/9traje.jpg');
+    background-repeat: no-repeat;
+}
+
+.jobs-container #job10 {
+    background-image: url('../img/10traje.jpg');
+    background-repeat: no-repeat;
+}
+
+.jobs-container #job11 {
+    background-image: url('../img/11traje.jpg');
+    background-repeat: no-repeat;
+}
+
+.jobs-container #job12 {
+    background-image: url('../img/12traje.jpg');
+    background-repeat: no-repeat;
+}
+
+.jobs-container #job13 {
+    background-image: url('../img/13traje.jpg');
+    background-repeat: no-repeat;
 }
 
 /* Job card cover styles */
@@ -432,6 +486,28 @@ nav {
     padding: 1rem;
     font-size: .9rem;
 }
+
+
+
+.uk-card.uk-card-default{
+    background: rgb(26, 1, 1);
+    padding 1px;
+}
+
+.uk-card img {
+    cursor: move;
+    height: 800px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
 
 /* Footer styles */
 footer {

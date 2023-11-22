@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <title>Locação de Trajes</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .slider {
+            display: flex;
+            background: #000;
+        }
+
+        .slider .slide {
+            height: 100vh;
+            position: relative;
+            z-index: 10;
+            border: solid #fff;
+            border-width: 1px;
+            background-size: cover;
+            background-position: center center;
+            opacity: 0.25;
+            width: 30%;
+            transition: width 0.8s ease, opacity 0.5s ease;
+        }
+
+        .slider .slide:hover {
+            width: 150%;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="trajes">Locação de Trajes</h2>
+        <div class="slider">
+            <div class="slide" style="background-image:url(img/trajef1.jpg);"></div>
+            <div class="slide" style="background-image:url(img/trajef2.jpg);">
+            </div>
+            <div class="slide" style="background-image:url(img/trajef3.jpg);"></div>
+            <div class="slide" style="background-image:url(img/trajef4.jpg);"></div>
+            <div class="slide" style="background-image:url(img/trajef5.jpg);"></div>
+            <div class="slide" style="background-image:url(img/trajef7.jpg);"></div>
+            <div class="slide" style="background-image:url(img/trajef8.jpg);"></div>
+            <div class="slide" style="background-image:url(img/trajef9.jpg);"></div>
+            <div class="slide" style="background-image:url(img/trajef10.jpg);"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Locação de Trajes</h2>
+        <div class="slider">
+            <div class="slide" style="background-image:url(img/mtraje.1.jpg);"></div>
+            <div class="slide" style="background-image:url(img/mtraje.2.jpg);">
+            </div>
+            <div class="slide" style="background-image:url(img/mtraje.4.jpg);"></div>
+            <div class="slide" style="background-image:url(img/mtraje.5.jpg);"></div>
+            <div class="slide" style="background-image:url(img/mtraje.6.jpg);"></div>
+            <div class="slide" style="background-image:url(img/mtraje.7.jpg);"></div>
+            <div class="slide" style="background-image:url(img/mtraje.8.jpg);"></div>
+            <div class="slide" style="background-image:url(img/mtraje.9.jpg);"></div>
+            <div class="slide" style="background-image:url(img/mtraje.10.jpg);"></div>
+        </div>
+    </div>
+</body>
+
+</html>

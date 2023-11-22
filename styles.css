@@ -1,0 +1,534 @@
+/* Variáveis de cores */
+:root {
+    --primary-color: rgb(119, 13, 30);
+    --light-color: #FFF;
+    --dark-color: #181920;
+    --text-color: #8B8E94;
+    --black: #000;
+    --secondary-bg: #E5EAFF;
+    --footer-bg: #1D1D1D;
+}
+
+/* Reset styles */
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+em,
+small,
+strong,
+sub,
+sup,
+mark,
+abbr,
+address,
+bdi,
+dfn,
+i,
+time,
+var,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary,
+figure,
+figcaption,
+img,
+svg,
+audio,
+canvas,
+iframe,
+video,
+label,
+textarea,
+datalist,
+fieldset,
+legend,
+meter,
+optgroup,
+option,
+progress,
+button,
+details,
+summary,
+input,
+select,
+textarea,
+menuitem {
+
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+    font-size: 100%;
+
+    font: inherit;
+
+    vertical-align: baseline;
+
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Main banner styles */
+#main-banner {
+    background: linear-gradient(to bottom, #000, #610101);
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/capa.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* Mobile styles for main banner */
+@media only screen and (max-width: 768px) {
+    #main-banner {
+        height: 100vh;
+    }
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+}
+
+/* Navigation container styles */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    background-color: black;
+    z-index: 10;
+}
+
+/* Mobile styles for navigation container */
+@media only screen and (max-width: 768px) {
+    .nav-container {
+        padding: 1rem;
+    }
+}
+
+/* Brand styles */
+.nav-container .brand {
+    color: white;
+    font-size: 2rem;
+}
+
+/* Main hover effect styles */
+.nav-container:hover {
+    /* Define your main hover styles here */
+}
+
+/* Navbar styles */
+.nav-container-navbar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* List item styles */
+.nav-container li {
+    margin: 5px 10px;
+}
+
+/* Anchor styles */
+.nav-container li a {
+    color: white;
+}
+
+/* Mobile styles for icon bars */
+.nav-container .fas.fa-bars {
+    font-size: 2rem;
+    color: #FFF;
+    display: none;
+}
+
+/* Mobile styles for navigation container */
+@media only screen and (max-width: 768px) {
+    .nav-container .fas.fa-bars {
+        display: block;
+    }
+}
+
+/* Title container styles */
+.title-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Mobile styles for title container */
+@media only screen and (max-width: 768px) {
+    .title-container {
+        text-align: center;
+        padding: 2rem;
+    }
+}
+
+/* Heading 2 styles */
+.title-container h2 {
+    font-size: 3rem;
+    color: #FFF;
+    text-shadow:
+        -1px -1px 0px #000,
+        -1px 1px 0px #000,
+        1px -1px 0px #000,
+        1px 0px 0px #610101;
+    /* Extend title-text-shadow styles here */
+}
+
+/* Heading 1 styles */
+.title-container h1 {
+    font-size: 4rem;
+    margin-top: 1rem;
+    color: #FFF;
+    text-shadow:
+        -1px -1px 0px #000,
+        -1px 1px 0px #000,
+        1px -1px 0px #000,
+        1px 0px 0px #610101;
+}
+
+.title-container a,
+.services-container a {
+    color: white;
+    background-color: #070000c4;
+    padding: 2rem 2rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    transition: .5s;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.title-container a:hover,
+.services-container a:hover {
+    background-color: #610101d5;
+}
+
+/* Services container styles */
+.services-container {
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Heading 2 styles for services */
+.services-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+    /* Extend section-title styles here */
+}
+
+/* Services card container styles */
+.services-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+/* Mobile styles for services card container */
+@media only screen and (max-width: 768px) {
+    .services-card-container {
+        padding: 2rem 0;
+    }
+}
+
+/* Services card styles */
+.services-card-container .services-card {
+    width: 30%;
+    margin: 1%;
+    padding: 2rem;
+    border: 1px solid #CCC;
+    transition: .3s;
+}
+
+/* Mobile styles for services card */
+@media only screen and (max-width: 768px) {
+    .services-card-container .services-card {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Icon styles */
+.services-card-container i {
+    color: var(--primary-color);
+    font-size: 4rem;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Heading 3 styles */
+.services-card-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Paragraph styles */
+.services-card-container p {
+    color: var(--text-color);
+}
+
+/* Hover effect styles for services card */
+.services-card-container .services-card:hover {
+    border: transparent;
+    box-shadow: 0 1px 10px #CCC;
+}
+
+
+
+.gallery-sample {
+    width: 100%;
+    height: 400;
+    padding-bottom: 100%;
+    display: block;
+}
+
+.gallery-sample li {
+    width: 33%;
+    height: 33%;
+    position: absolute;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.gallery-sample li img {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-sample li:nth-child(5) {
+    width: 66%;
+    height: 66%;
+}
+
+.grid {
+    position: relative;
+}
+
+.grid.three .top-one {
+    top: 0;
+}
+
+.grid.three .top-two {
+    top: 33%;
+}
+
+.grid.three .top-three {
+    top: 66%;
+}
+
+.grid.three .left-one {
+    left: 0;
+}
+
+.grid.three .left-two {
+    left: 33%;
+}
+
+.grid.three .left-three {
+    left: 66%;
+}
+
+.container {
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 0 20px;
+}
+
+
+
+
+
+
+
+.uk-card.uk-card-default {
+    background: rgb(26, 1, 1);
+    padding: 1px;
+}
+
+.uk-card img {
+    cursor: move;
+    height: 800px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* bolo */
+
+
+.containerbolo {
+    margin: 3rem auto;
+    background-color: #000;
+}
+
+.gallery {
+    display: grid;
+    max-width: 100%;
+    margin: 0 auto;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: minmax(300px, auto);
+}
+
+.gallery-item {
+    max-width: 150%;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: all .3s;
+
+    &:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    }
+
+    img {
+        width: 150%;
+        height: 260px;
+        object-fit: cover;
+    }
+}
+
+
+
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: var(--text-color);
+    padding: 5rem 2rem;
+}
+
+/* Footer container styles */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Mobile styles for footer container */
+@media only screen and (max-width: 768px) {
+    .footer-container {
+        max-width: 100%;
+        flex-direction: column;
+    }
+}
+
+/* Footer title styles */
+.footer-container .footer-title {
+    color: #FFF;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Footer description and links container styles */
+.footer-container .footer-desc-container,
+.footer-container .footer-links-container {
+    width: 50%;
+}
+
+/* Mobile styles for footer description and links container */
+@media only screen and (max-width: 768px) {
+
+    .footer-container .footer-desc-container,
+    .footer-container .footer-links-container {
+        width: 100%;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+}
+
+/* Footer description container styles */
+.footer-container .footer-desc-container p {
+    width: 80%;
+    line-height: 1.3;
+}
+
+/* Mobile styles for footer description container */
+@media only screen and (max-width: 768px) {
+    .footer-container .footer-desc-container p {
+        width: 100%;
+    }
+}
+
+/* Footer links container styles */
+.footer-container .footer-links-container ul {
+    padding: 0 1rem;
+}
+
+/* Mobile styles for footer links container */
+@media only screen and (max-width: 768px) {
+    .footer-container .footer-links-container ul {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Footer list item styles */
+.footer-container .footer-links-container li {
+    margin-bottom: .5rem;
+}
+
+/* Footer link styles */
+.footer-container .footer-links-container a {
+    color: var(--text-color);
+    transition: .5s;
+}
+
+/* Hover effect styles for footer links */
+.footer-container .footer-links-container a:hover {
+    color: #FFF;
+}
+
+/* Footer copyright container styles */
+.footer-container .footer-copy-right-container {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+/* Mobile styles for footer copyright container */
+@media only screen and (max-width: 768px) {
+    .footer-container .footer-copy-right-container {
+        text-align: center;
+    }
+}
+
+/* Paragraph styles for footer copyright container */
+.footer-container .footer-copy-right-container p {
+    margin-bottom: 1rem;
+}

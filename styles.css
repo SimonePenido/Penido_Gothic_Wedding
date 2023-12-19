@@ -160,6 +160,7 @@ nav {
 /* Anchor styles */
 .nav-container li a {
     color: white;
+    font-size: 1.5rem;
 }
 
 /* Mobile styles for icon bars */
@@ -370,6 +371,35 @@ nav {
     margin-top: 2em;
     margin-bottom: 2em;
     padding: 0 20px;
+    text-align: center;
+    padding: 2rem;
+    font-size: 3reem;
+    color: var(--black);
+}
+
+
+
+.sliderbody {
+    display: flex;
+    background: #000;
+}
+
+.sliderbody .slides {
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+    border: solid #fff;
+    border-width: 1px;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.25;
+    width: 30%;
+    transition: width 0.8s ease, opacity 0.5s ease;
+}
+
+.sliderbody .slides:hover {
+    width: 150%;
+    opacity: 1;
 }
 
 
@@ -408,7 +438,7 @@ nav {
 }
 
 .gallery-item {
-    max-width: 150%;
+    max-width: 100%;
     border-radius: 5px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     transition: all .3s;
@@ -418,7 +448,7 @@ nav {
     }
 
     img {
-        width: 150%;
+        width: 100%;
         height: 260px;
         object-fit: cover;
     }
@@ -427,108 +457,3 @@ nav {
 
 
 
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: var(--text-color);
-    padding: 5rem 2rem;
-}
-
-/* Footer container styles */
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* Mobile styles for footer container */
-@media only screen and (max-width: 768px) {
-    .footer-container {
-        max-width: 100%;
-        flex-direction: column;
-    }
-}
-
-/* Footer title styles */
-.footer-container .footer-title {
-    color: #FFF;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-/* Footer description and links container styles */
-.footer-container .footer-desc-container,
-.footer-container .footer-links-container {
-    width: 50%;
-}
-
-/* Mobile styles for footer description and links container */
-@media only screen and (max-width: 768px) {
-
-    .footer-container .footer-desc-container,
-    .footer-container .footer-links-container {
-        width: 100%;
-        margin-bottom: 2rem;
-        text-align: center;
-    }
-}
-
-/* Footer description container styles */
-.footer-container .footer-desc-container p {
-    width: 80%;
-    line-height: 1.3;
-}
-
-/* Mobile styles for footer description container */
-@media only screen and (max-width: 768px) {
-    .footer-container .footer-desc-container p {
-        width: 100%;
-    }
-}
-
-/* Footer links container styles */
-.footer-container .footer-links-container ul {
-    padding: 0 1rem;
-}
-
-/* Mobile styles for footer links container */
-@media only screen and (max-width: 768px) {
-    .footer-container .footer-links-container ul {
-        margin-bottom: 2rem;
-    }
-}
-
-/* Footer list item styles */
-.footer-container .footer-links-container li {
-    margin-bottom: .5rem;
-}
-
-/* Footer link styles */
-.footer-container .footer-links-container a {
-    color: var(--text-color);
-    transition: .5s;
-}
-
-/* Hover effect styles for footer links */
-.footer-container .footer-links-container a:hover {
-    color: #FFF;
-}
-
-/* Footer copyright container styles */
-.footer-container .footer-copy-right-container {
-    width: 100%;
-    margin-top: 3rem;
-}
-
-/* Mobile styles for footer copyright container */
-@media only screen and (max-width: 768px) {
-    .footer-container .footer-copy-right-container {
-        text-align: center;
-    }
-}
-
-/* Paragraph styles for footer copyright container */
-.footer-container .footer-copy-right-container p {
-    margin-bottom: 1rem;
-}

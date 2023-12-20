@@ -2,6 +2,10 @@
 
 Bem-vindo ao repositório do projeto <link>Penido Gothic Wedding</link>! Este projeto representa uma empresa fictícia de organização de casamentos com temática gótica. Aqui, você encontrará todos os detalhes e recursos relacionados ao projeto.
 
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+
+> :construction: Projeto em construção :construction:
+
 ## Visão Geral
 
 <link>Projeto baseado no curso <a href="https://www.udemy.com/course/sass-e-scss-do-basico-ao-avancado-projetos/">SASS e SCSS do básico ao avançado + Projetos</a>, ministrado pelo instrutor Matheus Battisti | Hora de Codar, plataforma Udemy. Trata-se de uma empresa fictícia de nome Penido Gothic Wedding</link>, que oferece serviços de planejamento, decoração e organização de casamentos com a temática gótica. O objetivo da empresa é proporcionar experiências únicas e memoráveis para casais que desejam um casamento fora do tradicional, com elementos sombrios e românticos.

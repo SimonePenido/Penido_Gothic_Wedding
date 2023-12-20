@@ -9,102 +9,89 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="trajes.css">
     <title>Locação de Trajes</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            background: #000;
-            color: #fff;
-            font-family: sans-serif;
-            font-size: 1.5rem;
-            line-height: 1.5;
-            padding: 1rem;
-        }
-
-        .container h2 {
-            font-size: 3rem;
-            font-family: serif;
-            color: #FFF;
-            text-shadow:
-                -1px -1px 0px #000,
-                -1px 1px 0px #000,
-                1px -1px 0px #000,
-                1px 0px 0px #610101;
-            /* Extend title-text-shadow styles here */
-        }
-
-        p {
-            font-size: 1.3rem;
-            font-family: serif;
-            color: #FFF;
-            text-shadow:
-                -1px -1px 0px #000,
-            /* Extend title-text-shadow styles here */  
-        }
-
-        .slider {
-            display: flex;
-            background: #000;
-        }
-
-        .slider .slide {
-            height: 100vh;
-            position: relative;
-            z-index: 10;
-            border: solid #fff;
-            border-width: 1px;
-            background-size: cover;
-            background-position: center center;
-            opacity: 0.25;
-            width: 30%;
-            transition: width 0.8s ease, opacity 0.5s ease;
-        }
-
-        .slider .slide:hover {
-            width: 150%;
-            opacity: 1;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="container">
-        <h2>Locação de Trajes</h2>
-        <p>A agência organizadora de casamentos góticos oferece um serviço especializado de locação de trajes femininos e masculinos, proporcionando aos noivos e convidados a oportunidade de vestir-se de acordo com o tema do evento. Com uma ampla variedade de opções, desde vestidos e ternos elegantes até acessórios exclusivos, a agência busca atender às preferências estéticas e individuais de cada cliente. Além disso, a equipe especializada oferece orientação e suporte na escolha dos trajes, garantindo que cada pessoa se sinta confiante e autêntica no dia do casamento gótico. Com atenção aos detalhes e um compromisso com a excelência, a agência de casamentos góticos busca tornar a experiência de aluguel de trajes uma parte memorável e significativa da celebração.</p>
-        <h2 id="trajes">Femininos</h2>
-        <div class="slider">
-            <div class="slide" style="background-image:url(img/trajef1.jpg);"></div>
-            <div class="slide" style="background-image:url(img/trajef2.jpg);">
-            </div>
-            <div class="slide" style="background-image:url(img/trajef3.jpg);"></div>
-            <div class="slide" style="background-image:url(img/trajef4.jpg);"></div>
-            <div class="slide" style="background-image:url(img/trajef5.jpg);"></div>
-            <div class="slide" style="background-image:url(img/trajef7.jpg);"></div>
-            <div class="slide" style="background-image:url(img/trajef8.jpg);"></div>
-            <div class="slide" style="background-image:url(img/trajef9.jpg);"></div>
-            <div class="slide" style="background-image:url(img/trajef10.jpg);"></div>
-        </div>
-    </div>
 
-    <div class="container">
-        <h2>Masculinos</h2>
-        <div class="slider">
-            <div class="slide" style="background-image:url(img/mtraje.1.jpg);"></div>
-            <div class="slide" style="background-image:url(img/mtraje.2.jpg);">
-            </div>
-            <div class="slide" style="background-image:url(img/mtraje.4.jpg);"></div>
-            <div class="slide" style="background-image:url(img/mtraje.5.jpg);"></div>
-            <div class="slide" style="background-image:url(img/mtraje.6.jpg);"></div>
-            <div class="slide" style="background-image:url(img/mtraje.7.jpg);"></div>
-            <div class="slide" style="background-image:url(img/mtraje.8.jpg);"></div>
-            <div class="slide" style="background-image:url(img/mtraje.9.jpg);"></div>
-            <div class="slide" style="background-image:url(img/mtraje.10.jpg);"></div>
+    <header id="main-banner">
+        <div class="nav-container">
+
+            <a href="" class="brand">
+                <object data="img/logo2.png" class="fa fa-bars"> </object>Penido Gothic Wedding
+            </a>
+            <nav>
+                <ul class="nav-container-navbar">
+                    <li>
+                        <a href="index.html" class="btn">Home</a>
+                    </li>
+                </ul>
+            </nav>
+            <i class="fas fa-bars"></i>
         </div>
-    </div>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Locação de Trajes</h1>
+            <p>A agência organizadora Penido Gothic Wedding oferece um serviço especializado de locação de trajes
+                femininos e masculinos, proporcionando aos noivos e convidados a oportunidade de vestir-se de acordo com o tema do
+                evento. Com uma ampla variedade de opções, desde vestidos e ternos elegantes até acessórios exclusivos,
+                a agência busca atender às preferências estéticas e individuais de cada cliente. Além disso, a equipe
+                especializada oferece orientação e suporte na escolha dos trajes, garantindo que cada pessoa se sinta
+                confiante e autêntica no dia do evento. Com atenção aos detalhes e um compromisso com a
+                excelência, a agência de casamentos góticos busca tornar a experiência de aluguel de trajes uma parte
+                memorável e significativa da celebração.</p>
+
+            <h2 id="trajes">Trajes Femininos</h2>
+            <div class="slider">
+                <div class="slide" style="background-image:url(img/trajef1.jpg);"></div>
+                <div class="slide" style="background-image:url(img/trajef2.jpg);">
+                </div>
+                <div class="slide" style="background-image:url(img/trajef3.jpg);"></div>
+                <div class="slide" style="background-image:url(img/trajef4.jpg);"></div>
+                <div class="slide" style="background-image:url(img/trajef5.jpg);"></div>
+                <div class="slide" style="background-image:url(img/trajef7.jpg);"></div>
+                <div class="slide" style="background-image:url(img/trajef8.jpg);"></div>
+                <div class="slide" style="background-image:url(img/trajef9.jpg);"></div>
+                <div class="slide" style="background-image:url(img/trajef10.jpg);"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>Trajes Masculinos</h2>
+            <div class="slider">
+                <div class="slide" style="background-image:url(img/mtraje.1.jpg);"></div>
+                <div class="slide" style="background-image:url(img/mtraje.2.jpg);"></div>
+                <div class="slide" style="background-image:url(img/mtraje.4.jpg);"></div>
+                <div class="slide" style="background-image:url(img/mtraje.5.jpg);"></div>
+                <div class="slide" style="background-image:url(img/mtraje.6.jpg);"></div>
+                <div class="slide" style="background-image:url(img/mtraje.7.jpg);"></div>
+                <div class="slide" style="background-image:url(img/mtraje.8.jpg);"></div>
+                <div class="slide" style="background-image:url(img/mtraje.9.jpg);"></div>
+                <div class="slide" style="background-image:url(img/mtraje.10.jpg);"></div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <h2>Trajes Casal</h2>
+            <div class="slider">
+                <div class="slide" style="background-image:url(img/roupacasal1.jpg);"></div>
+                <div class="slide" style="background-image:url(img/roupacasal2.jpg);"></div>
+                <div class="slide" style="background-image:url(img/roupacasal3.jpg);"></div>
+                <div class="slide" style="background-image:url(img/roupacasal4.jpg);"></div>
+                <div class="slide" style="background-image:url(img/roupacasal5.jpg);"></div>
+                <div class="slide" style="background-image:url(img/roupacasal6.png);"></div>
+                <div class="slide" style="background-image:url(img/roupacasal7.jpg);"></div>
+                <div class="slide" style="background-image:url(img/roupacasal8.jpg);"></div>
+                <div class="slide" style="background-image:url(img/roupacasal9.png);"></div>
+            </div>
+        </div>
+    </main>
 
     <!-- Footer -->
     <footer>

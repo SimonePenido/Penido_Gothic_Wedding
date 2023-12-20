@@ -70,32 +70,44 @@ input,
 select,
 textarea,
 menuitem {
-
     margin: 0;
     padding: 0;
-
     border: 0;
     font-size: 100%;
-
     font: inherit;
-
     vertical-align: baseline;
-
     list-style: none;
     box-sizing: border-box;
 }
 
-/* Main banner styles */
+* {
+    box-sizing: border-box;
+    letter-spacing: 1.5px;
+}
+
+
+/**
+ * CSS para o elemento do banner principal.
+ * 
+ * @seletor #main-banner
+ * @propriedade height - A altura do banner principal.
+ * @propriedade width - A largura do banner principal.
+ * @propriedade background - A imagem de fundo do banner principal.
+ * @propriedade background-size - O tamanho da imagem de fundo.
+ */
+
+
 #main-banner {
-    background: linear-gradient(to bottom, #000, #610101);
+    /*background: linear-gradient(to bottom, #000, #610101);*/
     height: 100vh;
     width: 100%;
-    background-image: url('../img/capa.png');
+    background: url('img/capa.png');
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat, repeat;
     background-attachment: fixed;
 }
+
 
 
 /* Mobile styles for main banner */
@@ -135,15 +147,12 @@ nav {
 /* Brand styles */
 .nav-container .brand {
     color: white;
-    font-size: 2rem;
+    font-size: 2.7rem;
+    display: flex;
+    align-items: center;
 }
 
-/* Main hover effect styles */
-.nav-container:hover {
-    /* Define your main hover styles here */
-}
 
-/* Navbar styles */
 .nav-container-navbar {
     display: flex;
     align-items: center;
@@ -153,14 +162,24 @@ nav {
 }
 
 /* List item styles */
-.nav-container li {
-    margin: 5px 10px;
+.nav-container ul li {
+    margin: 5px 20px;
+    transition: transform 0.3s ease;
 }
 
 /* Anchor styles */
-.nav-container li a {
+.nav-container ul li a {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.nav-container ul li a:hover {
+    color: #FFF;
+    background-color: #8B8E94;
+    padding: 0.3em;
+    border-radius: 3px;
+    text-decoration: none;
+    transform: scale(0.9); 
 }
 
 /* Mobile styles for icon bars */
@@ -192,6 +211,7 @@ nav {
     .title-container {
         text-align: center;
         padding: 2rem;
+        font-size: inherit;
     }
 }
 
@@ -223,7 +243,8 @@ nav {
 .services-container a {
     color: white;
     background-color: #070000c4;
-    padding: 2rem 2rem;
+    padding: 1.5rem 1.5rem;
+    font: medium bold sans-serif;
     border-radius: 5px;
     margin-top: 2rem;
     transition: .5s;
@@ -236,6 +257,24 @@ nav {
 .title-container a:hover,
 .services-container a:hover {
     background-color: #610101d5;
+}
+
+#servicos h2,
+#trajes h2,
+#confeitaria h2,
+#decoracao h2 {
+    color: var(--text-color);
+    font-size: 3rem;
+    text-shadow:
+    -1px -1px 0px #000,
+    -1px 1px 0px #000,
+    1px -1px 0px #000,
+    1px 0px 0px #610101;
+}
+
+#trajes,
+#ambientes {
+    background-color: #6101011e;
 }
 
 /* Services container styles */
@@ -312,6 +351,40 @@ nav {
 }
 
 
+/* bolo */
+
+
+.containerbolo {
+    margin: 3rem auto;
+    background-color: #000;
+}
+
+.gallery {
+    display: grid;
+    max-width: 100%;
+    margin: 0 auto;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: minmax(300px, auto);
+}
+
+.gallery-item {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: all .3s;
+
+    &:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    }
+
+    img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+    }
+}
+
 
 .gallery-sample {
     width: 100%;
@@ -367,6 +440,10 @@ nav {
 }
 
 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -377,35 +454,7 @@ nav {
     color: var(--black);
 }
 
-
-
-.sliderbody {
-    display: flex;
-    background: #000;
-}
-
-.sliderbody .slides {
-    height: 100vh;
-    position: relative;
-    z-index: 10;
-    border: solid #fff;
-    border-width: 1px;
-    background-size: cover;
-    background-position: center center;
-    opacity: 0.25;
-    width: 30%;
-    transition: width 0.8s ease, opacity 0.5s ease;
-}
-
-.sliderbody .slides:hover {
-    width: 150%;
-    opacity: 1;
-}
-
-
-
-
-
+/* ambiente */
 
 
 .uk-card.uk-card-default {
@@ -415,44 +464,12 @@ nav {
 
 .uk-card img {
     cursor: move;
-    height: 800px;
+    height: 900px;
     width: 100%;
     object-fit: cover;
 }
 
-/* bolo */
 
-
-.containerbolo {
-    margin: 3rem auto;
-    background-color: #000;
-}
-
-.gallery {
-    display: grid;
-    max-width: 100%;
-    margin: 0 auto;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-auto-rows: minmax(300px, auto);
-}
-
-.gallery-item {
-    max-width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-    transition: all .3s;
-
-    &:hover {
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
-    }
-
-    img {
-        width: 100%;
-        height: 260px;
-        object-fit: cover;
-    }
-}
 
 
 

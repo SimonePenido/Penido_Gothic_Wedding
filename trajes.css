@@ -1,0 +1,232 @@
+/* Reset styles */
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+em,
+small,
+strong,
+sub,
+sup,
+mark,
+abbr,
+address,
+bdi,
+dfn,
+i,
+time,
+var,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary,
+figure,
+figcaption,
+img,
+svg,
+audio,
+canvas,
+iframe,
+video,
+label,
+textarea,
+datalist,
+fieldset,
+legend,
+meter,
+optgroup,
+option,
+progress,
+button,
+details,
+summary,
+input,
+select,
+textarea,
+menuitem {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+}
+
+/* Navigation container styles */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    background-color: black;
+    z-index: 10;
+}
+
+/* Mobile styles for navigation container */
+@media only screen and (max-width: 768px) {
+    .nav-container {
+        padding: 1rem;
+    }
+}
+
+/* Brand styles */
+.nav-container .brand {
+    color: white;
+    font-size: 2rem;
+}
+
+/* Main hover effect styles */
+.nav-container:hover {
+    /* Define your main hover styles here */
+}
+
+/* Navbar styles */
+.nav-container-navbar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* List item styles */
+.nav-container li {
+    margin: 5px 10px;
+}
+
+/* Anchor styles */
+.nav-container li a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Mobile styles for icon bars */
+.nav-container .fas.fa-bars {
+    font-size: 2rem;
+    color: #FFF;
+    display: none;
+}
+
+/* Mobile styles for navigation container */
+@media only screen and (max-width: 768px) {
+    .nav-container .fas.fa-bars {
+        display: block;
+    }
+}
+
+body {
+	background: #000;
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 1.5rem;
+	line-height: 1.5;
+	padding: 1rem;
+}
+
+main {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding: 0 20px;
+	padding: 2rem;
+	font-size: 3reem;
+	color: var(--black);
+}
+
+.container {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.container h1 {
+	font-size: 3.5rem;
+	font-family: serif;
+	text-align: center;
+	color: #FFF;
+	padding-top: 0.3em 0;
+	margin: 0.3em;
+	text-shadow:
+		-1px -1px 0px #000,
+		-1px 1px 0px #000,
+		1px -1px 0px #000,
+		1px 0px 0px #610101;
+	/* Extend title-text-shadow styles here */
+}
+
+.container h2 {
+	font-size: 3rem;
+	font-family: serif;
+	text-align: center;
+	color: #FFF;
+	padding: 1em 0;
+	margin: 0.5em;
+	text-shadow:
+		-1px -1px 0px #000,
+		-1px 1px 0px #000,
+		1px -1px 0px #000,
+		1px 0px 0px #610101;
+	/* Extend title-text-shadow styles here */
+}
+
+.container p {
+	font-size: 1.3rem;
+	font-family: serif;
+	color: #FFF;
+	text-align: justify;
+	text-shadow:
+		-1px -1px 0px #000,
+		/* Extend title-text-shadow styles here */
+}
+
+.slider {
+	display: flex;
+	background: #000;
+}
+
+.slider .slide {
+	height: 100vh;
+	position: relative;
+	z-index: 10;
+	border: solid #fff;
+	border-width: 1px;
+	background-size: cover;
+	background-position: center center;
+	opacity: 0.25;
+	width: 30%;
+	transition: width 0.8s ease, opacity 0.5s ease;
+}
+
+.slider .slide:hover {
+	width: 200%;
+	opacity: 1;
+}

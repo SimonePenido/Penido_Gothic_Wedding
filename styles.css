@@ -1,6 +1,6 @@
 /* Variáveis de cores */
 :root {
-    --primary-color: rgb(119, 13, 30);
+    --primary-color: rgb(36, 34, 34);
     --light-color: #FFF;
     --dark-color: #181920;
     --text-color: #8B8E94;
@@ -121,7 +121,7 @@ menuitem {
 nav {
     display: flex;
     justify-content: space-between;
-    color: #FFF;
+    color: #A6A6A6;
 }
 
 /* Navigation container styles */
@@ -132,8 +132,8 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.5rem 2rem;
-    background-color: black;
+    padding: 1.5rem 1rem;
+    background-color: rgb(0, 0, 0);
     z-index: 10;
 }
 
@@ -146,10 +146,11 @@ nav {
 
 /* Brand styles */
 .nav-container .brand {
-    color: white;
+    color: #A6A6A6;
     font-size: 2.7rem;
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 
@@ -241,7 +242,7 @@ nav {
 
 .title-container a,
 .services-container a {
-    color: white;
+    color: rgb(168, 168, 168);
     background-color: #070000c4;
     padding: 1.5rem 1.5rem;
     font: medium bold sans-serif;
@@ -256,7 +257,7 @@ nav {
 
 .title-container a:hover,
 .services-container a:hover {
-    background-color: #610101d5;
+    background-color: #181717d5;
 }
 
 #servicos h2,
@@ -382,7 +383,6 @@ nav {
 
     img {
         width: 100%;
-        height: auto;
         object-fit: cover;
     }
 }
@@ -460,8 +460,9 @@ nav {
 
 
 .uk-card.uk-card-default {
-    background: rgb(26, 1, 1);
+    background: rgb(68, 67, 67);
     padding: 1px;
+    color: var(--light-color);
 }
 
 .uk-card img {

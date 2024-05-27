@@ -1,6 +1,6 @@
 
 :root {
-    --primary-color: rgb(119, 13, 30);
+    --primary-color: rgb(88, 86, 86);
     --light-color: #FFF;
     --dark-color: #181920;
     --text-color: #8B8E94;
@@ -87,11 +87,8 @@ footer {
     padding: 5rem 2rem;
     margin: 0;
     padding: 0;
-
     border: 0;
-
     vertical-align: baseline;
-
     list-style: none;
     box-sizing: border-box;
 }
@@ -102,6 +99,11 @@ footer {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+}
+
+.footer-container a {
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 /* Mobile styles for footer container */

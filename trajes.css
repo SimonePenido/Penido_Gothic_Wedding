@@ -109,7 +109,7 @@ nav {
 
 /* Main hover effect styles */
 .nav-container:hover {
-    /* Define your main hover styles here */
+    background-color: #000;
 }
 
 /* Navbar styles */

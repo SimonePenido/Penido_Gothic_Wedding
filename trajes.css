@@ -198,14 +198,40 @@ nav {
     text-decoration: none;
 }
 
-
+/* Esconde o menu por padrão em telas pequenas */
 .nav-container-navbar {
     display: flex;
-    align-items: center;
-    height: 100%;
     list-style-type: none;
     text-decoration: none;
 }
+
+@media only screen and (max-width: 768px) {
+    .nav-container-navbar {
+        display: none; /* Esconde o menu inicialmente em telas pequenas */
+        flex-direction: column; /* Empilha os links em uma coluna */
+        background-color: black;
+        position: absolute;
+        top: 70px; /* Ajuste conforme necessário */
+        width: 100%;
+        left: 0;
+        padding: 1rem 0;
+        z-index: 99;
+    }
+
+    /* Exibe o ícone do menu sanduíche */
+    #menu-toggle {
+        display: block;
+        font-size: 2rem;
+        color: #FFF;
+        cursor: pointer;
+    }
+}
+
+/* Exibe o menu quando ativado */
+.nav-active {
+    display: flex; /* Mostra o menu */
+}
+
 
 
 .container {

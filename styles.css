@@ -3,7 +3,7 @@
     --primary-color: rgb(36, 34, 34);
     --light-color: #FFF;
     --dark-color: #181920;
-    --text-color: #8B8E94;
+    --text-color: #414242;
     --black: #000;
     --secondary-bg: #E5EAFF;
     --footer-bg: #1D1D1D;
@@ -153,6 +153,13 @@ nav {
     text-decoration: none;
 }
 
+@media screen and (max-width: 768px) {
+    .nav-container .brand {
+        font-size: 1.7rem;
+    }
+    
+}
+
 
 .nav-container-navbar {
     display: flex;
@@ -171,7 +178,7 @@ nav {
 /* Anchor styles */
 .nav-container ul li a {
     color: #A6A6A6;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .nav-container ul li a:hover {
@@ -180,12 +187,12 @@ nav {
     padding: 0.3em;
     border-radius: 3px;
     text-decoration: none;
-    transform: scale(0.9); 
+    transform: scale(0.5); 
 }
 
 /* Mobile styles for icon bars */
 .nav-container .fas.fa-bars {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #FFF;
     display: none;
 }
@@ -211,15 +218,15 @@ nav {
 @media only screen and (max-width: 768px) {
     .title-container {
         text-align: center;
-        padding: 2rem;
-        font-size: inherit;
+        padding: 3rem;
+        font-size: 1rem;
     }
 }
 
 
 /* Heading 2 styles */
 .title-container h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #FFF;
     text-shadow:
         -1px -1px 0px #000,
@@ -231,7 +238,7 @@ nav {
 
 /* Heading 1 styles */
 .title-container h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 1em;
     color: #FFF;
     text-shadow:
@@ -253,6 +260,12 @@ nav {
     border-radius: 10px;
     text-transform: uppercase;
     text-decoration: none;
+    list-style-type: none;
+}
+
+.title-container ul {
+    display: flex;
+    justify-content: center;
     list-style-type: none;
 }
 
@@ -357,6 +370,7 @@ nav {
 /* Paragraph styles */
 .services-card-container p {
     color: var(--text-color);
+    text-align: center;
 }
 
 /* Hover effect styles for services card */
@@ -401,6 +415,12 @@ nav {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
+}
 
 .gallery-sample {
     width: 100%;
@@ -466,12 +486,15 @@ nav {
     padding: 0 20px;
     text-align: center;
     padding: 2rem;
-    font-size: 3reem;
+    font-size: 3rem;
     color: var(--black);
 }
 
 /* ambiente */
 
+.uk-slider-nav {
+    display: none; /* Esconde os botões de navegação (dots) */
+}
 
 .uk-card.uk-card-default {
     background: rgb(68, 67, 67);
@@ -486,6 +509,23 @@ nav {
     object-fit: cover;
 }
 
+.uk-card-body a {
+    font-size: 1.5rem;
+    padding: 1em;
+    margin: 0;
+}   
+
+@media screen and (max-width: 768px) {
+    .uk-card img {
+        height: 350px;
+    }
+    .uk-card-body{
+        font-size: 1rem;
+        padding: 0.3em;
+        margin: 0;
+    }
+    
+}
 
 
 

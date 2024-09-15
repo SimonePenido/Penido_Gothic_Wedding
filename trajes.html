@@ -16,13 +16,18 @@
 <body>
     <header id="main-banner">
         <div class="nav-container">
-            <a href="index.html" class="brand">
-                <object data="img/logo2.png" class="fa fa-bars"> </object> Gothic Wedding
+            <a href="" class="brand">
+                <object data="img/logo2.png" class="fa fa-bars"></object>Penido Gothic Wedding
             </a>
-
-            <i class="fas fa-bars"></i>
+            <nav>
+                <ul class="nav-container-navbar">
+                    <li><a href="index.html" class="btn">Home</a></li>
+                </ul>
+            </nav>
+            <i class="fas fa-bars" id="menu-toggle"></i>
         </div>
     </header>
+    
 
     <main>
         <div class="container">
@@ -104,6 +109,17 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbar = document.querySelector('.nav-container-navbar');
+    
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('nav-active'); // Alterna entre mostrar e esconder o menu
+        });
+    </script>
+    
+
 </body>
 
 </html>

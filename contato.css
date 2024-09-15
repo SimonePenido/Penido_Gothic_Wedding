@@ -28,12 +28,20 @@ body{
     list-style-type: none;
     text-decoration: none;
 }
+@media screen and (max-width: 768px) {
+    .nav-container .brand {
+        font-size: 1.5rem;
+    }
+    
+}
+
 /* Estilos para o contêiner */
 .container {
     display: flex;
     align-items: center;
     justify-content: space-between; /* Adicionado para alinhar os itens nas extremidades */
 }
+
 
 /* Estilos para o formulário */
 form {
@@ -85,11 +93,13 @@ input[type=text], input[type=email], input[type=tel], textarea {
     .container {
         flex-direction: column; /* Mudar para empilhamento em telas menores */
         align-items: center; /* Centralizar os itens */
+        display: flex;
     }
 
-    .imagem,
-    form {
-        width: 80%; /* Reduzir a largura dos itens para melhor ajuste em telas menores */
+    .form {
+        align-items: center;
+        width: 100%; /* Defina a largura do formulário para 100% */
+
     }
 }
 

@@ -91,6 +91,7 @@ footer {
     vertical-align: baseline;
     list-style: none;
     box-sizing: border-box;
+    letter-spacing: 1.5px;
 }
 
 /* Footer container styles */
@@ -99,11 +100,21 @@ footer {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #333;
+    color: #fff;
 }
 
 .footer-container a {
     color: var(--text-color);
     text-decoration: none;
+}
+
+footer ul {
+    list-style: disc;
+    padding: 0;
 }
 
 /* Mobile styles for footer container */
@@ -196,4 +207,58 @@ footer {
 /* Paragraph styles for footer copyright container */
 .footer-container .footer-copy-right-container p {
     margin-bottom: 1rem;
+}
+
+
+/* Footer sections */
+.footer-desc-container,
+.footer-links-container,
+.footer-copy-right-container {
+    flex: 1;
+    padding: 1rem;
+}
+
+/* Footer title styles */
+.footer-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer link styles */
+.footer-links-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links-container ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Media query for small screens */
+@media only screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        padding: 1rem;
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    .footer-desc-container,
+    .footer-links-container,
+    .footer-copy-right-container {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer-title {
+        font-size: 1.2rem; /* Reduz o tamanho da fonte para caber melhor */
+    }
+
+    .footer-links-container ul li a {
+        font-size: 1rem; /* Ajusta o tamanho da fonte dos links */
+    }
+
+    .footer-copy-right-container p {
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte do copyright */
+    }
 }

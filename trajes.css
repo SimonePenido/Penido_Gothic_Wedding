@@ -149,10 +149,9 @@ nav {
 body {
 	background: #000;
 	color: #fff;
-	font-family: sans-serif;
-	font-size: 1.5rem;
-	line-height: 1.5;
+	font-family: serif;
 	padding: 1rem;
+	letter-spacing: 1.5px;
 }
 
 main {
@@ -162,7 +161,52 @@ main {
 	padding: 2em;
 	font-size: 2rem;
 	color: var(--black);
+
 }
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: #A6A6A6;
+}
+
+/* Navigation container styles */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    background-color: rgb(0, 0, 0);
+    z-index: 10;
+}
+
+/* Mobile styles for navigation container */
+@media only screen and (max-width: 768px) {
+    .nav-container {
+        padding: 1rem;
+    }
+}
+.nav-container .brand {
+    color: #A6A6A6;
+    font-size: 2.7rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.nav-container-navbar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style-type: none;
+    text-decoration: none;
+}
+
 
 .container {
 	max-width: 100%;
@@ -175,7 +219,7 @@ main {
 	text-align: center;
 	color: #FFF;
 	padding-top: 0.3em 0;
-	margin: 0.3em;
+	margin: 1em;
 	text-shadow:
 		-1px -1px 0px #000,
 		-1px 1px 0px #000,
@@ -189,7 +233,7 @@ main {
 	font-family: serif;
 	text-align: center;
 	color: #FFF;
-	padding: 1em 0;
+	padding: 2em;
 	margin: 0.5em;
 	text-shadow:
 		-1px -1px 0px #000,
@@ -200,8 +244,9 @@ main {
 }
 
 .container p {
-	font-size: 1rem;
+	font-size: 1.3rem;
 	font-family: serif;
+	line-height: 1.5;
 	color: #FFF;
 	text-align: justify;
 	text-shadow:
@@ -237,3 +282,23 @@ main {
 	width: 190%;
 	opacity: 1;
 }
+
+@media only screen and (max-width: 768px) {
+    .slider {
+        display: block; /* Exibe as imagens em bloco (empilhadas) */
+    }
+
+    .slider .slide {
+        width: 100%; /* Garante que a imagem ocupe toda a largura */
+        height: 500px; /* Aumenta a altura das imagens */
+        margin-bottom: 1rem; /* Espaçamento entre as imagens */
+        opacity: 1; /* Remove o efeito de opacidade */
+        transition: none; /* Remove a transição de aumento */
+    }
+
+    .slider .slide:hover {
+        width: 100%; /* Remove o efeito de expansão ao hover */
+        opacity: 1; /* Mantém a opacidade sem mudanças */
+    }
+}
+

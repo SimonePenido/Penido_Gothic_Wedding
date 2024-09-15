@@ -8,8 +8,26 @@ body{
     background-color: #000;
     font-family: sans-serif;
     color: #fff;
+    letter-spacing: 1.5px;
 }
 
+
+.nav-container .brand {
+    color: #A6A6A6;
+    font-size: 2.7rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.nav-container-navbar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style-type: none;
+    text-decoration: none;
+}
 /* Estilos para o contêiner */
 .container {
     display: flex;
@@ -44,8 +62,8 @@ input[type=text], input[type=email], input[type=tel], textarea {
 }
 
 /* Estilos para o botão */
-button {
-    background-color: #4CAF50;
+.button {
+    background-color: #610101;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;

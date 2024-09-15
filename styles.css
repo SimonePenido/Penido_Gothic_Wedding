@@ -216,6 +216,7 @@ nav {
     }
 }
 
+
 /* Heading 2 styles */
 .title-container h2 {
     font-size: 3rem;
@@ -231,7 +232,7 @@ nav {
 /* Heading 1 styles */
 .title-container h1 {
     font-size: 4rem;
-    margin-top: 1rem;
+    margin: 1em;
     color: #FFF;
     text-shadow:
         -1px -1px 0px #000,
@@ -271,6 +272,19 @@ nav {
     -1px 1px 0px #000,
     1px -1px 0px #000,
     1px 0px 0px #610101;
+    padding-top: 2rem;
+}
+
+#servicos p,
+#trajes p,
+#confeitaria p,
+#decoracao p {  padding: 1.5rem;
+    font-size: 1.3rem;
+}
+
+#ambientes h3 {
+    padding: 2rem;
+    font-size: 1.3rem;
 }
 
 #trajes,

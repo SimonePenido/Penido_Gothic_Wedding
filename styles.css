@@ -496,6 +496,36 @@ nav {
     color: var(--black);
 }
 
+
+
+
+.hidden-gallery {
+    display: none; /* Esconde as imagens extras */
+}
+
+.btn-bolo {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-bolo:hover {
+    background-color: var(--dark-color);
+}
+
+
+
+
+
+
+
 /* ambiente */
 
 .uk-slider-nav {
